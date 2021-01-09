@@ -1,11 +1,10 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "@heroku-cli/plugin-ci",
   "version": "1.0.0",
   "description": "### Motivation",
   "main": "server.js",
   "type": "core",
   "root": "/usr/local/lib/node_modules/heroku",
-  "name": "@heroku-cli/plugin-ci",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -25,5 +24,8 @@
     "morgan": "^1.9.1",
     "node": "^15.x",
     "phoenix": "^1.5.7"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
   }
 }
