@@ -1,8 +1,11 @@
 {
   "name": "mongoose_skeleton",
   "version": "1.0.0",
-  "description": "",
+  "description": "### Motivation",
   "main": "server.js",
+  "type": "core",
+  "root": "/usr/local/lib/node_modules/heroku",
+  "name": "@heroku-cli/plugin-ci",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -12,10 +15,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@heroku/buildpack-registry": "^1.0.1",
+    "async-file": "^2.0.2",
+    "cli-ux": "^4.9.3",
     "express": "^4.16.3",
+    "got": "^8.3.2",
     "heroku": "^7.47.7",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1",
-    "node": "^15.4.0"
+    "node": "^15.x",
+    "phoenix": "^1.5.7"
   }
 }
