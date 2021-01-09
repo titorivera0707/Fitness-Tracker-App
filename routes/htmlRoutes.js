@@ -1,4 +1,7 @@
 const path = require("path");
+const express = require("express")
+
+var app = express.Router()
 
 module.exports = function(app) {
   app.get("/", function(req, res) {
