@@ -12,7 +12,7 @@ module.exports = function (app) {
     })
 
     app.put("/api/workouts/:id", (req, res) => {
-        db.Workout.updateOne({_id: req.params.id}, {$push: {exercises: req.body}}, (err, data) => {
+        db.Workout.findByIdAndUpdate({_id: req.params.id}, {$push: {exercises: req.body}}, (err, data) => {
             if(err){
                 res.json(err);
             } else {
@@ -21,7 +21,7 @@ module.exports = function (app) {
         })
     })
 
-    app.get("/api/exercise/", (req, res) => {
+    app.get("/api/workouts/", (req, res) => {
         db.Workout.find({}).then(workoutDb => {
             res.json(workoutDb)
             
