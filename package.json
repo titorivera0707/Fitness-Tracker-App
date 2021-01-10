@@ -1,11 +1,8 @@
 {
   "name": "mongoose_skeleton",
   "version": "1.0.0",
-  "description": "### Motivation",
+  "description": "",
   "main": "server.js",
-  "type": "core",
-  "root": "/usr/local/lib/node_modules/heroku",
-  "name": "@heroku-cli/plugin-ci",
 
   "dependencies": {
     "accepts": "^1.3.7",
